@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('backend.layouts.master');
+    return view('backend.blank');
 });
 Route::group([
     'namespace' => 'Backend',
