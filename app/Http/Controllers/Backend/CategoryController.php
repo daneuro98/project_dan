@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,12 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        // $products = User::simplePaginate(15);
-         $products = \DB::table('products')->orderBy('status', 'desc')
-                ->take(5)->get();
-         return view('backend.products.index')->with([
-            'products' => $products
-        ]);    
+        //
     }
 
     /**
@@ -51,11 +46,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        $products = \DB::table('products')->where('id', $id)
-                ->orderBy('name', 'desc')
-                ->take(5)
-                ->get();
-
+        //
     }
 
     /**
@@ -78,7 +69,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-       DB::table('users')
+        DB::table('users')
             ->where('id', 1)
             ->update(['status' => 1]);
     }

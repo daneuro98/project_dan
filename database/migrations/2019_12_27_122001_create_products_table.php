@@ -23,7 +23,7 @@ class CreateProductsTable extends Migration
             // $table->text('content');
             // $table->integer('user_id');
             // $table->integer('category_id');
-            // $table->integer('status');
+            $table->integer('status');
             // $table->dateTime('create_at');
             // $table->dateTime('update_at');
             // $table->dateTime('delete');

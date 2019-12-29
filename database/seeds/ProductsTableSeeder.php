@@ -16,7 +16,7 @@ class ProductsTableSeeder extends Seeder
 
      DB::table('products')->insert([
             'name' => 'admin'.$i,
-            
+            'status' => $i,
             
 
 
