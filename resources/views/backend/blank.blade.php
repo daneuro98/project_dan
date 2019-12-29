@@ -38,7 +38,21 @@
           </div>
         </div>
         <div class="card-body">
-          Start creating your amazing application!
+
+         {{--  <table>
+
+            
+            </table> --}}
+         {{--  @foreach($users as $user)
+                           <tr>
+                                <td>{{ $user->id }}</td>
+                                <td>{{ $user->email }}</td>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $user->created_at }}</td>
+                                <td><span class="tag tag-success">Approved</span></td>
+                            </tr>
+                            @endforeach --}}
+          
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
@@ -51,4 +65,7 @@
     </section>
     <!-- /.content -->
   </div>
+
+
+
 @endsection

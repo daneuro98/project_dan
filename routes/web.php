@@ -19,4 +19,12 @@ Route::group([
     'prefix' => 'admin'
 ], function (){
     Route::get('/dashboard', 'DashboardController@index')->name('backend.dashboard');
+    Route::group(['prefix'=>'users'],function(){
+
+    	Route::get('/','UserController@index')->name('backend.user.index');
+    });
+    Route::group(['prefix'=>'products'],function(){
+
+    	Route::get('/','ProductController@index')->name('backend.product.index');
+    });
 });
